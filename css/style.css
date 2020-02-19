@@ -1,0 +1,209 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Oxygen', sans-serif;
+}
+
+a.nav-link {
+    margin-left: 55px!important;
+}
+/* Make the image fully responsive */
+.carousel-inner img {
+	width: 100%;
+	height: 80vh;
+}
+
+.header-carousel li {
+	width: 10px!important;
+	height: 10px!important;
+	border-radius: 50%!important;
+	margin-left: 10px!important;
+	margin-right: 10px!important;
+}
+
+
+.about-p p{
+	line-height:35px;
+	word-spacing: 2px;
+	letter-spacing: 1px;
+}
+.service-div{
+	width: 100%;
+	height: auto;
+}
+.box{
+	padding:25px;
+	
+	transition: 1s linear;
+}
+.box:hover{
+	transform: translateY(-30px);
+	-webkit-box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.8);
+	-moz-box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.8);
+	box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.8);
+	background-color: #007bff;
+}
+.box:hover .box-heading, .box:hover .box-i, .box:hover .box-p{
+	color: white;
+}
+
+.box p{
+	font-size: 13px;
+}
+
+/***********expert div***********/
+  .expert-div{
+  	width: 100%;
+  	height: auto;
+  }
+
+ /***********news letter************/
+ #newsletter{
+ 	width: 100%;
+ 	height: auto;
+ }
+#newsletter h3{
+	width: 508px;
+    
+    margin: auto;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: type 8s steps(39) infinite;
+    border-right: 2px solid black
+}
+@keyframes type{
+	0%{
+		width: 0px;
+	}
+	
+}
+ 
+ .newsInput {
+    border-top-left-radius: 100px!important;
+    border-bottom-left-radius: 100px!important;
+    border: none!important;
+    outline: none!important;
+} 
+
+.newsBtn{
+	 border-top-right-radius: 100px!important;
+    border-bottom-right-radius: 100px!important;
+    border: none!important;
+    outline: none!important;
+}
+
+
+.contact{
+	width: 100%;
+	height: 70vh;
+}
+
+/**********team section***********/
+
+.teamsection{
+	width: 100%;
+	height: auto;
+}
+.mainbox{
+	width: 250px;
+	height: 300px;
+	position: relative;
+	perspective: 1000px;
+
+}
+.mainbox:hover .flipbox{
+	transform: rotateY(180deg);
+}
+.flipbox{
+	width: 100%;
+	height: 100%;
+	transition: all 0.8s;
+	transform-style: preserve-3d;
+	position: relative;
+
+}
+.front, .back{
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   backface-visibility: hidden;
+
+}
+.back{
+	transform: rotateY(180deg);
+}
+.front img{
+	width: 100%;
+	height: 100%;
+}
+/**********foooter*********/
+#firstfooter{
+	background-color: #273746 ;
+	width: 100%;
+	height: auto;
+}
+.box-row1 {
+    background-color:#2E4053;
+    padding: 15px!important;
+}
+.foot-box {
+    padding: 20px!important;
+}
+a.btn.btn-success {
+    margin: 10px!important;
+    padding: 7px 23px!important;
+}
+/*********media query************/
+@media screen and (max-width: 768px) {
+	.box{
+		margin: 25px;
+	}
+}
+/*********last footer*********/
+footer{
+
+	width: 100%;
+	height: auto;
+}
+li{
+	list-style: none;
+}
+/*************media query for team card****************/
+@media screen  and (max-width: 768px){
+	.team-media2, .team-media4{
+		margin-top: 10px;
+	}
+
+
+/*************media query for team card****************/
+@media screen and (max-width: 586px) {
+	#newsletter h3{
+		font-size: 22px;
+		width: 400px;
+		margin: auto;
+	}
+}
+}
+/*******animation********/
+
+#about-part2 , #about-part1 , #service-part1,  #service-part2,  #service-part3{
+	opacity: 0;
+}
+#about-part2 .animated, #about-part2 .animated, #service-part1 .animated, #service-part1 .animated, #service-part1 .animated{
+      opacity: 1;
+}
+
+#card-1, #card-2,  #card-3,  #card-4 {
+	opacity: 0;
+}    
+#card-1 .animated, #card-1 .animated, #card-1 .animated, #card-1 .animated{
+	opacity: 1;
+}
+#contact-form{
+	opacity: 0;
+}
+
+#contact-form .animated{
+	opacity: 0;
+}
